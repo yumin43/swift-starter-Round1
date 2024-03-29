@@ -12,13 +12,11 @@ import Foundation
 
 func chocoSnack(lengthOfChoco: Int, shapeOfbody: String, toping: String, lengthOfBar: Int) {
     for _ in 1...lengthOfChoco {
-        print(toping, terminator: "")
-        print(shapeOfbody, terminator: "")
-        print(toping)
+        print(" ", toping, shapeOfbody, toping, separator: "")
     }
     for _ in 1...lengthOfBar {
         print("  | |")
     }
 }
 
-chocoSnack(lengthOfChoco: 4, shapeOfbody: " ***", toping: " ", lengthOfBar: 4)
+chocoSnack(lengthOfChoco: 4, shapeOfbody: "|0|", toping: "&", lengthOfBar: 2)
