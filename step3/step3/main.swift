@@ -8,7 +8,7 @@
 import Foundation
 
 
-//함수에서 길이, 몸통, 토핑, 막대길이
+
 
 func chocoSnack(lengthOfChoco: Int, shapeOfbody: String, toping: String, lengthOfBar: Int) {
     for _ in 1...lengthOfChoco {
@@ -20,5 +20,5 @@ func chocoSnack(lengthOfChoco: Int, shapeOfbody: String, toping: String, lengthO
         print("  | |")
     }
 }
-//빼빼로 좌측엔 빈칸 하나가 있다.
+
 chocoSnack(lengthOfChoco: 4, shapeOfbody: " ***", toping: " ", lengthOfBar: 4)
