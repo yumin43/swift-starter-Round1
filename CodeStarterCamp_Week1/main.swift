@@ -1,11 +1,1 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
-
-import Foundation
-
-print("hello world")
+makeIceCream(creamSize: 11, stickSize: 4)
