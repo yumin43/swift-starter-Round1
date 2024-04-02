@@ -36,6 +36,6 @@ func chocoBar(lengthOfBar: Int) {
         }
     }
 }
-chocoSnack(lengthOfChoco: 6, shapeOfbody: "|0|", toping: " ", lengthOfBar: 4)
+chocoSnack(lengthOfChoco: 6, shapeOfbody: "|0|", toping: "&", lengthOfBar: 4)
 chocoBar(lengthOfBar: boxOfLengthOfBar)
 
