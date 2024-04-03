@@ -8,17 +8,34 @@
 import Foundation
 
 
-//함수에서 길이, 몸통, 토핑, 막대길이
+var boxOfLengthOfBar = 0
+var width = 0
+var blank: String = " "
 
 func chocoSnack(lengthOfChoco: Int, shapeOfbody: String, toping: String, lengthOfBar: Int) {
     for _ in 1...lengthOfChoco {
-        print(toping, terminator: "")
-        print(shapeOfbody, terminator: "")
-        print(toping)
+        print(" ", toping, shapeOfbody, toping, separator: "")
     }
-    for _ in 1...lengthOfBar {
-        print("  | |")
+    boxOfLengthOfBar = lengthOfBar
+    width = shapeOfbody.count
+}
+func chocoBar(lengthOfBar: Int) {
+    
+    if width >= 4 {
+        for _ in 1...width/2 - 1  {
+            blank.append(" ")
+        }
+    }
+    if width % 2 != 0 {
+        for _ in 1...lengthOfBar {
+            print("\(blank) | |")
+        }
+    } else{
+        for _ in 1...lengthOfBar {
+            print("\(blank) ||")
+        }
     }
 }
-//빼빼로 좌측엔 빈칸 하나가 있다.
-chocoSnack(lengthOfChoco: 4, shapeOfbody: " ***", toping: " ", lengthOfBar: 4)
+chocoSnack(lengthOfChoco: 6, shapeOfbody: "|0|", toping: "&", lengthOfBar: 4)
+chocoBar(lengthOfBar: boxOfLengthOfBar)
+
