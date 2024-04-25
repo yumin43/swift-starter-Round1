@@ -8,5 +8,10 @@
 
 import Foundation
 
-print("Hello, World!")
 
+for i in 0...8 {
+    print("***********")
+    }
+for i in 0...4{
+    print("    | |      ")
+    }
