@@ -34,5 +34,4 @@ func makeIceCream(iceCreamHeight: Int, stickHeight: Int, iceCreamWidth: Int) {
     drawStick(height: stickHeight, width: iceCreamWidth)
 }
 
-makeIceCream(iceCreamHeight: 9, stickHeight: 4, iceCreamWidth: 11)
-
+makePepero(bodyLength: 12, body: "***", stickLength: 4, topping: "&")
