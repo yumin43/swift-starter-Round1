@@ -7,22 +7,32 @@
 
 import Foundation
 
-func printPepero(길이 length: Int, 막대길이 lengthOfStick: Int, 몸통 styleOfPepero: String = "***", 토핑 topping: String = " ") {
-    
-    print("<정보>", "길이: \(length)", "몸통: \(styleOfPepero)", "토핑: \(topping)", "막대길이: \(lengthOfStick)" , separator: "\n", terminator: "\n\n")
-    
-    let formOfPepero: String = topping + styleOfPepero + String(topping.reversed())
-        
+func formPartOfChocolate(bodyOfPepero: String, topping: String) -> String {
+    return topping + bodyOfPepero + String(topping.reversed())
+}
+
+func printPartOfChocolate(length: Int, form: String) {
     for _ in 1...length {
-        print(formOfPepero)
+        print(form)
     }
-    
-    let formOfStick: String =  String(repeating: " ", count: topping.count) + "|" + String(repeating: " ", count: styleOfPepero.count-2 ) + "|" + String(repeating: " ", count: topping.count)
+}
+
+func printPartOfStick(lengthOfStick: Int, topping: String, bodyOfPepero: String) {
+    let formOfStick: String =  String(repeating: " ", count: topping.count) + "|" + String(repeating: " ", count: bodyOfPepero.count > 2 ? bodyOfPepero.count-2 : 0 ) + "|" + String(repeating: " ", count: topping.count)
    
     for _ in 1...lengthOfStick {
         print(formOfStick)
     }
 }
 
-printPepero(길이: 10, 막대길이: 4, 몸통: "***", 토핑: "&B")
+func printPepero(길이 length: Int, 막대길이 lengthOfStick: Int, 몸통 bodyOfPepero: String = "***", 토핑 topping: String = " ") {
+    print("<정보>", "길이: \(length)", "몸통: \(bodyOfPepero)", "토핑: \(topping)", "막대길이: \(lengthOfStick)", "" , separator: "\n")
+    
+    let form = formPartOfChocolate(bodyOfPepero: bodyOfPepero, topping: topping)
+    
+    printPartOfChocolate(length: length, form: form)
+    
+    printPartOfStick(lengthOfStick: lengthOfStick, topping: topping, bodyOfPepero: bodyOfPepero)
+}
 
+printPepero(길이: 12, 막대길이: 4, 몸통: "***", 토핑: "&")
