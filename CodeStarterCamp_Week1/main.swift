@@ -31,7 +31,7 @@ func drawStick(bodyWidth: Int, stickHeight: Int) {
     }
 }
 
-func drawIceCream(bodyWidth: Int, bodyHeight: Int, stickHeight: Int) {
+func drawIceCream(by bodyWidth: Int, and bodyHeight: Int, with stickHeight: Int) {
     if bodyWidth > 0 && bodyHeight > 0 && stickHeight >= 0 {
         drawBody(bodyWidth: bodyWidth, bodyHeight: bodyHeight)
         drawStick(bodyWidth: bodyWidth, stickHeight: stickHeight)
@@ -42,4 +42,4 @@ let bodyWidth: Int = 11
 let bodyHeight: Int = 8
 let stickHeight = 4
 
-drawIceCream(bodyWidth: bodyWidth, bodyHeight: bodyHeight, stickHeight: stickHeight)
+drawIceCream(by: bodyWidth, and: bodyHeight, with: stickHeight)
