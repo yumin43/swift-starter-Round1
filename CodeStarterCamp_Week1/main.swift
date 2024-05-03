@@ -8,23 +8,38 @@
 
 import Foundation
 
-func drawIceCream(iceCreamWidth: Int, iceCreamheight: Int) {
-    for _ in 1...iceCreamheight {
-        print(String(repeating: "*", count: iceCreamWidth))
+func drawBody(bodyWidth: Int, bodyHeight: Int) {
+    for _ in 0..<bodyHeight {
+        print(String(repeating: "*", count: bodyWidth))
     }
 }
 
-func drawStick(iceCreamWidth: Int, stickHeight: Int) {
-    let stick = iceCreamWidth % 2 == 0 ? String(repeating: " ", count: iceCreamWidth / 2 - 2) + "|  |" : String(repeating: " ", count: iceCreamWidth / 2 - 1) + "| |"
+func drawStick(bodyWidth: Int, stickHeight: Int) {
+    var space: String
+    var stick: String
     
-    for _ in 1...stickHeight {
-        print(stick)
+    if bodyWidth == 1 {
+        space = ""
+        stick = "|"
+    } else {
+        space = String(repeating: " ", count: bodyWidth / 2 - 1)
+        stick = bodyWidth % 2 == 0 ? "||" : "| |"
+    }
+    
+    for _ in 0..<stickHeight {
+        print(space + stick)
     }
 }
 
-let iceCreamWidth: Int = 11
-let iceCreamheight: Int = 8
+func drawIceCream(bodyWidth: Int, bodyHeight: Int, stickHeight: Int) {
+    if bodyWidth > 0 && bodyHeight > 0 && stickHeight >= 0 {
+        drawBody(bodyWidth: bodyWidth, bodyHeight: bodyHeight)
+        drawStick(bodyWidth: bodyWidth, stickHeight: stickHeight)
+    }
+}
+
+let bodyWidth: Int = 11
+let bodyHeight: Int = 8
 let stickHeight = 4
 
-drawIceCream(iceCreamWidth: iceCreamWidth, iceCreamheight: iceCreamheight)
-drawStick(iceCreamWidth: iceCreamWidth, stickHeight: stickHeight)
+drawIceCream(bodyWidth: bodyWidth, bodyHeight: bodyHeight, stickHeight: stickHeight)
