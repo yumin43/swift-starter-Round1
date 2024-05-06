@@ -7,35 +7,57 @@
 //
 
 import Foundation
-let icecreamWidth: Int = Int(readLine()!)!
-let bodyHeight: Int = Int(readLine()!)!
-let barHeight: Int = Int(readLine()!)!
 
-func makeBody(width: Int, height: Int) {
-    for _ in 0..<height {
-        print(String(repeating: "*", count: width))
+struct PeperoInfo {
+    var barHeight: Int
+    var topping: String?
+    var body: String
+    var bodyHeight: Int
+}
+
+var samplePepero = PeperoInfo(barHeight: 4, topping: "#", body: "***", bodyHeight: 10)
+
+func drawingBody(topping: String?, bodyHeigt: Int, body: String) {
+    let iceCreamBody = (topping ?? " ") + body + (topping ?? "")
+    for _ in 1...bodyHeigt {
+        print(iceCreamBody)
     }
 }
 
-func makeBar(width: Int,height: Int) {
-    var bar: [String] = Array(repeating: " ", count: width)
-    if width == 1 {
-        bar = ["|"]
-    } else if width % 2 == 1 {
-        bar[width / 2 - 1] = "|"
-        bar[width / 2 + 1] = "|"
+func drawingBar(peperoInfo: PeperoInfo) {
+    var body: [String] = Array(repeating: " ", count: peperoInfo.body.count + ((peperoInfo.topping?.count ?? 1)*2))
+    body[(peperoInfo.topping?.count ?? 0)] = "|"
+    body[(body.count) - (peperoInfo.topping?.count ?? 0) - 1] = "|"
+    for _ in 1...peperoInfo.barHeight {
+        print(body.joined())
+    }
+}
+
+func printInfo(peperoInfo: PeperoInfo) {
+    print("<정보>")
+    print("길이: \(peperoInfo.bodyHeight)")
+    print("몸통: \(peperoInfo.body)")
+    print("토핑: \(peperoInfo.topping ?? "")")
+    print("막대길이: \(peperoInfo.barHeight)")
+}
+
+func checkPepero(with peperoInfo: PeperoInfo) -> Bool {
+    if peperoInfo.barHeight > 0 && peperoInfo.bodyHeight > 0  && peperoInfo.body.count >= 1 {
+        return true
     } else {
-        bar[width / 2 - 1] = "|"
-        bar[width / 2] = "|"
-    }
-    for _ in 0..<height{
-        print(bar.joined())
+        return false
     }
 }
 
-func makeIcecream(width icecreamWidth: Int, body bodyHeight: Int, bar barHeight: Int) {
-    makeBody(width: icecreamWidth, height: bodyHeight)
-    makeBar(width: icecreamWidth, height: barHeight)
+func makePepero(with peperoInfo: PeperoInfo) {
+    printInfo(peperoInfo: peperoInfo)
+    if checkPepero(with: peperoInfo) {
+        drawingBody(topping: peperoInfo.topping, bodyHeigt: peperoInfo.bodyHeight, body: peperoInfo.body)
+        drawingBar(peperoInfo: peperoInfo)
+    } else {
+        print("잘못된 정보를 입력하셨습니다.")
+    }
 }
 
-makeIcecream(width: icecreamWidth, body: bodyHeight, bar: barHeight)
+makePepero(with: samplePepero)
+
