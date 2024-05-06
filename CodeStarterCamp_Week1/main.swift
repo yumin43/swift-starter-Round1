@@ -1,20 +1,21 @@
 //
-//  main.swift
+//  Round1_Step3.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by Lee Soheun on 5/6/24.
 //
 
 import Foundation
 
-func drawBody(bodyWidth: Int, bodyHeight: Int) {
-    for _ in 0..<bodyHeight {
-        print(String(repeating: "*", count: bodyWidth))
-    }
+func printInfo(by bodyHeight: Int, and stickHeight: Int, for bodyType: String, with topping: String) {
+    print("<정보>")
+    print("길이: \(bodyHeight)")
+    print("몸통: \(bodyType)")
+    print("토핑: \(topping)")
+    print("막대길이: \(stickHeight)\n")
 }
 
-func drawStick(bodyWidth: Int, stickHeight: Int) {
+func drawStick(centering stickHeight: Int, on bodyWidth: Int) {
     var space: String
     var stick: String
     
@@ -31,15 +32,29 @@ func drawStick(bodyWidth: Int, stickHeight: Int) {
     }
 }
 
-func drawIceCream(by bodyWidth: Int, and bodyHeight: Int, with stickHeight: Int) {
-    if bodyWidth > 0 && bodyHeight > 0 && stickHeight >= 0 {
-        drawBody(bodyWidth: bodyWidth, bodyHeight: bodyHeight)
-        drawStick(bodyWidth: bodyWidth, stickHeight: stickHeight)
+func addToppings(in body : String, add topping: String) -> String {
+    return topping + body + String(topping.reversed())
+}
+
+func drawBody(repeat bodyWithToppings: String, for bodyHeight: Int) {
+    for _ in 0..<bodyHeight {
+        print(bodyWithToppings)
     }
 }
 
-let bodyWidth: Int = 11
-let bodyHeight: Int = 8
-let stickHeight = 4
+func drawPepero(by bodyHeight: Int, and stickHeight: Int, for bodyType: String, with topping: String = "") {
+    if !bodyType.isEmpty && stickHeight >= 0 && bodyHeight >= 0 {
+        let bodyWithToppings: String = addToppings(in: bodyType, add: topping)
+        let bodyWidth: Int = bodyWithToppings.count
+        printInfo(by: bodyHeight, and: stickHeight, for: bodyType, with: topping)
+        drawBody(repeat: bodyWithToppings, for: bodyHeight)
+        drawStick(centering: stickHeight, on: bodyWidth)
+    }
+}
 
-drawIceCream(by: bodyWidth, and: bodyHeight, with: stickHeight)
+let bodyHeight: Int = 10
+let bodyType: String = "*"
+let topping: String = "@#"
+let stickHeight: Int = 4
+
+drawPepero(by: bodyHeight, and: stickHeight, for: bodyType, with: topping)
