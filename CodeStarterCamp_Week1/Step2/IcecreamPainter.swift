@@ -7,20 +7,19 @@
 
 import Foundation
 
-
-func paintIcecreamBody(height: Int){
+func paintIceCreamBody(height: Int){
     for _ in 1...height {
         print("***********")
     }
 }
 
-func printIcecreamBar(height: Int){
+func printIceCreamBar(height: Int){
     for _ in 1...height {
         print("    | |")
     }
 }
 
 func paintIceCream(bodyHeight: Int, barHeight: Int) {
-    paintIcecreamBody(height: bodyHeight);
-    printIcecreamBar(height: barHeight);
+    paintIceCreamBody(height: bodyHeight);
+    printIceCreamBar(height: barHeight);
 }
