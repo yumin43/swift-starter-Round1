@@ -59,18 +59,18 @@
 		34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {
 			isa = PBXGroup;
 			children = (
-				520ADC702C077E2C00DEDD9F /* Step1 */,
+				520ADC702C077E2C00DEDD9F /* Step2 */,
 				34811DAE274B938F00A1E994 /* main.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
 		};
-		520ADC702C077E2C00DEDD9F /* Step1 */ = {
+		520ADC702C077E2C00DEDD9F /* Step2 */ = {
 			isa = PBXGroup;
 			children = (
 				520ADC712C077F5100DEDD9F /* IcecreamPainter.swift */,
 			);
-			path = Step1;
+			path = Step2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

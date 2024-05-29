@@ -20,4 +20,7 @@ func printIcecreamBar(height: Int){
     }
 }
 
-
+func paintIceCream(bodyHeight: Int, barHeight: Int) {
+    paintIcecreamBody(height: bodyHeight);
+    printIcecreamBar(height: barHeight);
+}
