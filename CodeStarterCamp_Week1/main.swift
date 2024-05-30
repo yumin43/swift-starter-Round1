@@ -9,6 +9,6 @@
 import Foundation
 
 //paintIceCreamBody(height: 8)
-//printIceCreamBar(height: 2)
+//paintIceCreamBar(height: 2)
 
 paintIceCream(bodyHeight: 8, barHeight: 2)
