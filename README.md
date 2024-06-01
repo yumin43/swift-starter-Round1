@@ -10,3 +10,6 @@
 
 * 담당 멘토에게 전하고 싶은 한마디
 > 잘 부탁드리겠습니다! 감사합니다!🙌🏻
+
+## Step 2 : 아이스크림 그리기
+* [IceCreamPainter](./CodeStarterCamp_Week1/Step2/IceCreamPainter.swift)
