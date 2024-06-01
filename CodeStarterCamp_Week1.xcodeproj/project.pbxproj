@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
 		520ADC722C077F5100DEDD9F /* IceCreamPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520ADC712C077F5100DEDD9F /* IceCreamPainter.swift */; };
+		52D308122C0B30F500742C3D /* PpaePpaeRoPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D308112C0B30F500742C3D /* PpaePpaeRoPainter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		520ADC712C077F5100DEDD9F /* IceCreamPainter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamPainter.swift; sourceTree = "<group>"; };
+		52D308112C0B30F500742C3D /* PpaePpaeRoPainter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PpaePpaeRoPainter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {
 			isa = PBXGroup;
 			children = (
+				52D308102C0B30CA00742C3D /* Step3 */,
 				520ADC702C077E2C00DEDD9F /* Step2 */,
 				34811DAE274B938F00A1E994 /* main.swift */,
 			);
@@ -71,6 +74,14 @@
 				520ADC712C077F5100DEDD9F /* IceCreamPainter.swift */,
 			);
 			path = Step2;
+			sourceTree = "<group>";
+		};
+		52D308102C0B30CA00742C3D /* Step3 */ = {
+			isa = PBXGroup;
+			children = (
+				52D308112C0B30F500742C3D /* PpaePpaeRoPainter.swift */,
+			);
+			path = Step3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				520ADC722C077F5100DEDD9F /* IceCreamPainter.swift in Sources */,
+				52D308122C0B30F500742C3D /* PpaePpaeRoPainter.swift in Sources */,
 				34811DAF274B938F00A1E994 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
