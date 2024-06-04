@@ -33,3 +33,4 @@ func paintPpaePpaeRo(length: Int, body: String, barLength: Int, topping: String 
     paintBody(toppedBody: toppedBody, length: length)
     paintBar(barLength: barLength)
 }
+
