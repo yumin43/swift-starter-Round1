@@ -1,0 +1,104 @@
+<mxfile host="Electron" modified="2024-05-30T10:47:00.827Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.8 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="xBwrhzSIkBfIp7NqHT8t" version="24.4.8" type="device">
+  <diagram name="Page-1" id="AZlFK2pq1CPfLf3drL6w">
+    <mxGraphModel dx="1060" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tLSu3L-7Q6EVpsFMC9nR-1" target="tLSu3L-7Q6EVpsFMC9nR-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-1" value="시작" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="80" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="tLSu3L-7Q6EVpsFMC9nR-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="360" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tLSu3L-7Q6EVpsFMC9nR-2" target="tLSu3L-7Q6EVpsFMC9nR-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-2" value="paintIceCream&lt;br&gt;(bodyHeight: 8,&lt;div&gt;barHeight: 2)&lt;br&gt;호출&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tLSu3L-7Q6EVpsFMC9nR-4" target="tLSu3L-7Q6EVpsFMC9nR-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-4" value="&quot;***********&quot; 출력" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tLSu3L-7Q6EVpsFMC9nR-6" target="tLSu3L-7Q6EVpsFMC9nR-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-6" value="height 만큼&lt;br&gt;for in loop를 돌았는가" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="500" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="tLSu3L-7Q6EVpsFMC9nR-6" target="tLSu3L-7Q6EVpsFMC9nR-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="tLSu3L-7Q6EVpsFMC9nR-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="650" as="sourcePoint" />
+            <mxPoint x="420" y="380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="290" y="540" />
+              <mxPoint x="290" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="tLSu3L-7Q6EVpsFMC9nR-16" target="tLSu3L-7Q6EVpsFMC9nR-18" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-16" value="&quot;&amp;nbsp; &amp;nbsp; | |&quot; 출력" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="tLSu3L-7Q6EVpsFMC9nR-18" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-18" value="height 만큼&lt;br&gt;for in loop를 돌았는가" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="820" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" source="tLSu3L-7Q6EVpsFMC9nR-18" target="tLSu3L-7Q6EVpsFMC9nR-18" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" source="tLSu3L-7Q6EVpsFMC9nR-18" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="970" as="sourcePoint" />
+            <mxPoint x="420" y="700" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="290" y="860" />
+              <mxPoint x="290" y="780" />
+              <mxPoint x="290" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-22" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="380" y="890" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-26" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="380" y="570" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-27" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="300" y="830" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-31" value="종료" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="940" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-36" value="paintIceCreamBody&lt;br&gt;(height: bodyHeigth)&lt;br&gt;호출" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-38" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="300" y="510" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tLSu3L-7Q6EVpsFMC9nR-39" target="tLSu3L-7Q6EVpsFMC9nR-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tLSu3L-7Q6EVpsFMC9nR-39" value="paintCreamBar&lt;br&gt;(height: barHeight)&lt;br&gt;호출" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

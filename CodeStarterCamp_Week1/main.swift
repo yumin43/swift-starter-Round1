@@ -8,5 +8,7 @@
 
 import Foundation
 
-print("Hello, World!")
+//paintIceCreamBody(height: 8)
+//paintIceCreamBar(height: 2)
 
+paintIceCream(bodyHeight: 8, barHeight: 2)
