@@ -17,7 +17,7 @@ func combineToppingAndBody(topping: String, body: String) -> String{
     return topping + body + topping
 }
 
-func paintBody(toppedBody body: String, length: Int){
+func paintBody(toppedBody body: String, bodyLength length: Int){
     for _ in 1...length{
         print(body)
     }
@@ -30,7 +30,7 @@ func paintPpaePpaeRo(length: Int, body: String, barLength: Int, topping: String 
     print("토핑", topping, separator: ": ")
     print("막대길이", barLength, separator: ": ", terminator: "\n\n")
     let toppedBody: String = combineToppingAndBody(topping:topping, body:body)
-    paintBody(toppedBody: toppedBody, length: length)
+    paintBody(toppedBody: toppedBody, bodyLength: length)
     paintBar(barLength: barLength)
 }
 
