@@ -24,11 +24,15 @@ func paintBody(toppedBody body: String, bodyLength length: Int){
 }
 
 func paintPpaePpaeRo(length: Int, body: String, barLength: Int, topping: String = " "){
-    print("<정보>")
-    print("길이", length, separator: ": ")
-    print("몸통", body, separator: ": ")
-    print("토핑", topping, separator: ": ")
-    print("막대길이", barLength, separator: ": ", terminator: "\n\n")
+    // COMMENT - print() 함수를 많이 쓰는 것을 지양하므로 문자열 보간법 사용 후 출력
+    var orderInfo: String = String()
+    orderInfo.append("<정보>\n")
+    orderInfo.append("길이: \(length)\n")
+    orderInfo.append("몸통: \(body)\n")
+    orderInfo.append("토핑: \(topping)\n")
+    orderInfo.append("막대길이: \(barLength)\n")
+    print(orderInfo, terminator: "\n")
+    
     let toppedBody: String = combineToppingAndBody(topping:topping, body:body)
     paintBody(toppedBody: toppedBody, bodyLength: length)
     paintBar(barLength: barLength)
