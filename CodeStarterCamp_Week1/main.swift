@@ -6,24 +6,18 @@
  5. 코드 실행 후 아이스크림의 모양을 조절하며 완성한다.
  */
 
-
-
 func printIcecream(count: Int) {
-    print("***********")
+    for i in 1...count {
+        print("***********")
+    }
 }
-// 아이스크림의 부분을 정의
-
-for count in 1...8 {
-    printIcecream(count: count)
-}
-// 반복을 통해 아이스크림 부분을 형성
+printIcecream(count: 8)
+// 아이스크림 부분을 만드는 코드
 
 func printIcecreamBody(count: Int) {
-    print("    | |     ")
+    for i in 1...count {
+        print("    | |     ")
+    }
 }
-// 아이스크림 막대 부분을 정의
-
-for count in 1...4 {
-    printIcecreamBody(count: count)
-}
-// 아이스크림 막대기 부분을 형성
+printIcecreamBody(count: 4)
+// 아이스크림 막대기를 만드는 코드
