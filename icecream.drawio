@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net" modified="2024-07-02T08:52:15.650Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="xPOWXjFdzRFFkNcSFeDY" version="24.6.4" type="device">
+  <diagram name="페이지-1" id="dCcRC-E8xoCGEF9i4LHY">
+    <mxGraphModel dx="954" dy="615" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jx7-XikDfeJtgfW3i90Z-1" target="jx7-XikDfeJtgfW3i90Z-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-1" value="시작" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jx7-XikDfeJtgfW3i90Z-2" target="jx7-XikDfeJtgfW3i90Z-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-2" value="printIcecream&lt;div&gt;(count: 8)&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jx7-XikDfeJtgfW3i90Z-4" target="jx7-XikDfeJtgfW3i90Z-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-4" value="&quot;***********&quot;&lt;div&gt;출력&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="319" y="360" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="jx7-XikDfeJtgfW3i90Z-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="210" y="515" />
+              <mxPoint x="210" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jx7-XikDfeJtgfW3i90Z-6" target="jx7-XikDfeJtgfW3i90Z-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-6" value="i 의 값이 count(8)보다 작은가?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="269" y="460" width="290" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-9" value="Yes" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="210" y="460" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-10" value="No" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="414" y="570" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jx7-XikDfeJtgfW3i90Z-11" target="jx7-XikDfeJtgfW3i90Z-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-11" value="printIcecreamBody&lt;div&gt;(count: 4)&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="329" y="675" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jx7-XikDfeJtgfW3i90Z-13" target="jx7-XikDfeJtgfW3i90Z-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-13" value="&quot;&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;| |&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;&lt;div&gt;출력&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="815" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="jx7-XikDfeJtgfW3i90Z-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="770" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="210" y="970" />
+              <mxPoint x="210" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jx7-XikDfeJtgfW3i90Z-15" target="jx7-XikDfeJtgfW3i90Z-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="1130" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="970" />
+              <mxPoint x="600" y="1129" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-15" value="i 의 값이 4보다 작은가?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="271" y="910" width="286" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-18" value="No" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="520" y="920" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-19" value="Yes" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="219" y="910" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jx7-XikDfeJtgfW3i90Z-20" value="끝" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="1089" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
