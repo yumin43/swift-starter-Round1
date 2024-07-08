@@ -8,5 +8,19 @@
 
 import Foundation
 
-print("Hello, World!")
+func makeTop() -> Void {
+    for top in 1...8 {
+        print("***********")
+    }
+}
 
+
+func makeBottom() -> Void {
+    for bottom in 1...4{
+        print("    | |    ")
+    }
+}
+
+
+makeTop()
+makeBottom()
