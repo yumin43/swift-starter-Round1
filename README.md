@@ -7,4 +7,4 @@
 3.  담당 멘토에게 전하고 싶은 한마디: 조금은 느리더라도 포기하지 않고 끝까지 따라가도록 하겠습니다. 최일선에서 항상 힘써주셔서 너무나 감사합니다!
 
 4. step 2 순서도입니다.
-<img width="267" alt="스크린샷 2024-07-10 오전 10 50 40" src="https://github.com/yagom-academy/swift-starter-Round1/assets/98391474/9a926f38-c6e0-475e-b736-94e2444adcc8">
+<img width="309" alt="스크린샷 2024-07-11 오후 6 51 50" src="https://github.com/yagom-academy/swift-starter-Round1/assets/98391474/803baef2-8788-4419-84dd-34a533bf59a9">

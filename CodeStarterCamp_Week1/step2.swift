@@ -7,14 +7,20 @@
 
 import Foundation
 
-func makeIcecreamBody(){
+func makeIcecreamBody() {
     for _ in 1...8 {
         print("***********")
     }
 }
 
-func makeIcecreamBar(){
+func makeIcecreamBar() {
     for _ in 1...4{
         print("    | |")
     }
+}
+
+
+func makeIcecream() {
+    makeIcecreamBody()
+    makeIcecreamBar()
 }
