@@ -7,36 +7,35 @@
 
 import Foundation
 
-func makePeperoBody(topping: String, body: String, body_length: Int) {
+func makePeperoBody(topping: String, body: String, bodyLength: Int) {
     if topping.isEmpty {
-        for _ in 1...body_length {
+        for _ in 1...bodyLength {
             print("\(body)")
         }
     }
     else {
-        for _ in 1...body_length {
+        for _ in 1...bodyLength {
             print("\(topping)\(body)\(topping)")
         }
-
     }
 }
 
 func checkEven(num: Int) -> Bool {
     if num % 2 == 0 {
         return true
-    }else {
+    } else {
         return false
     }
 }
 
-func makeBarIfBodyEven(body_count: Int, bar_length: Int) {
-    for _ in 1...bar_length {
-        switch body_count {
+func makeBarIfBodyEven(bodyCount: Int, barLength: Int) {
+    for _ in 1...barLength {
+        switch bodyCount {
         case 2:
             print("||")
             break
         default:
-            for _ in 1..<body_count/2 {
+            for _ in 1..<bodyCount/2 {
                 print(" ", terminator: "")
             }
             print("||")
@@ -45,9 +44,9 @@ func makeBarIfBodyEven(body_count: Int, bar_length: Int) {
     }
 }
 
-func makeBarIfBodyOdd(body_count: Int, bar_length: Int) {
-    for _ in 1...bar_length {
-        switch body_count {
+func makeBarIfBodyOdd(bodyCount: Int, barLength: Int) {
+    for _ in 1...barLength {
+        switch bodyCount {
         case 1:
             print("|")
             break
@@ -55,7 +54,7 @@ func makeBarIfBodyOdd(body_count: Int, bar_length: Int) {
             print("| |")
             break
         default:
-            for _ in 1...body_count/3 {
+            for _ in 1...bodyCount/3 {
                 print(" ", terminator: "")
             }
             print("| |")
@@ -64,29 +63,29 @@ func makeBarIfBodyOdd(body_count: Int, bar_length: Int) {
     }
 }
 
-func makePeperoBar(body_count: Int, bar_length: Int) {
-    let even = checkEven(num: body_count)
+func makePeperoBar(bodyCount: Int, barLength: Int) {
+    let even = checkEven(num: bodyCount)
     
     if even {
-        makeBarIfBodyEven(body_count: body_count, bar_length: bar_length)
+        makeBarIfBodyEven(bodyCount: bodyCount, barLength: barLength)
     } else {
-        makeBarIfBodyOdd(body_count: body_count, bar_length: bar_length)
+        makeBarIfBodyOdd(bodyCount: bodyCount, barLength: barLength)
     }
 }
 
 struct makePeperoInfo {
-    var body_length: Int
+    var bodyLength: Int
     var body: String
     var topping: String
-    var bar_length: Int
+    var barLength: Int
     
     init() {
         print("<정보>")
         print("길이: ", terminator: "")
-        if let body_length_str = readLine(), let body_length = Int(body_length_str) {
-            self.body_length = body_length
+        if let bodyLengthStr = readLine(), let bodyLength = Int(bodyLengthStr) {
+            self.bodyLength = bodyLength
         } else {
-            self.body_length = 0
+            self.bodyLength = 0
         }
         
         print("몸통: ", terminator: "")
@@ -96,13 +95,13 @@ struct makePeperoInfo {
         self.topping = readLine() ?? ""
         
         print("막대길이: ", terminator: "")
-        if let bar_length_str = readLine(), let bar_length = Int(bar_length_str) {
-            self.bar_length = bar_length
+        if let barLengthStr = readLine(), let barLength = Int(barLengthStr) {
+            self.barLength = barLength
         } else {
-            self.bar_length = 0
+            self.barLength = 0
         }
         
-        makePeperoBody(topping: topping, body: body, body_length: body_length)
-        makePeperoBar(body_count:body.count + (topping.count * 2), bar_length: bar_length)
+        makePeperoBody(topping: topping, body: body, bodyLength: bodyLength)
+        makePeperoBar(bodyCount:body.count + (topping.count * 2), barLength: barLength)
     }
 }
