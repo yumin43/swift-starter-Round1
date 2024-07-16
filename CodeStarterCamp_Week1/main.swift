@@ -8,4 +8,5 @@
 
 import Foundation
 
-makeIcecream()
+var myPepero = makePeperoInfo()
+
